@@ -4,34 +4,85 @@
     --title-background-color-dark: #2E2F42;
     --text-color:#434455;
     --background-color-team: #F4F4FD;
-    --backgrond-color-light: #FFFFFF
+    --backgrond-color-light: #FFFFFF;
+    --color-accent: #E7E9FC;
+    --font-text-base: 'Roboto', sans-serif;
+    --font-text-link: 'Raleway', sans-serif
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-text-base);
     color: var(--text-color);
     background-color: var(--backgrond-color-light)
 }
 
 .link {
     text-decoration: none;
-    color: inherit;
+    color: var(--title-background-color-dark);
 }
 
-.site-title {
+.no-title {
     visibility: hidden
+}
+
+.btn {
+    font-family: var(--font-text-base);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btn {
+    color: var(--backgrond-color-light);
+    background-color: var(--primary-brand-color);
+    box-shadow: var(--title-background-color-dark);
+}
+
+.hero-btn:hover, .hero-btn:focus, .portfolio-filters-btn:hover, .portfolio-filters-btn:focus {
+    background-color: var(--pressed-state-color);
+    box-shadow: var(--title-background-color-dark);
+}
+
+.portfolio-filters-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-brand-color);
+    background: var(--background-color-team);
+    border: 1px solid var(--color-accent);
+}
+
+.portfolio-filters-btn:hover,
+.portfolio-filters-btn:focus {
+    color: var(--backgrond-color-light)
 }
 
 .list {
     list-style: none;
 }
 
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-background-color-dark)
+}
+
+.text-down {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em
+}
+
 /**--header--**/
 
-.header {}
-
 .logo-link {
-    font-family: 'Raleway';
+    font-family: var(--font-text-link);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -66,8 +117,8 @@ body {
 .header-link:hover, .header-link:focus, .header-address-link:hover,
 .header-address-link:focus {
     color: var(--pressed-state-color);
-
 }
+
 /**--hero--**/
 .hero {
     background-color:var(--title-background-color-dark);
@@ -80,59 +131,7 @@ body {
     color: var(--backgrond-color-light);
 }
 
-.hero-btn { 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--backgrond-color-light);
-    background-color: var(--primary-brand-color);
-    box-shadow: var(--title-background-color-dark);
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.hero-btn:hover, .hero-btn:focus {
-    background-color: var(--pressed-state-color);
-    box-shadow: var(--title-background-color-dark);
-}
-
-/**--section-advantages--**/
-
-.features {}
-
-.features-title {
-}
-
-.features-list {}
-
-.list {}
-
-.features-item {}
-
-.features-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--title-background-color-dark);
-}
-
-.features-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-/**--section-doing--**/
-
-.doing {
-    
-}
-
-.doing-title {
+.big-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -141,28 +140,9 @@ body {
     text-transform: capitalize;
     color: var(--title-background-color-dark);
 }
-
-.doing-list {}
-
-.doing-item {}
-
-/**--section-team--**/
 
 .team {
     background-color: var(--background-color-team);
-}
-
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--title-background-color-dark);
-}
-
-.team-list {
 }
 
 .team-item {
@@ -200,42 +180,10 @@ body {
     letter-spacing: 0.02em;
 }
 
-/**----portfolio----**/
-
-.main-portfolio {}
-
-.section-portfolio {}
-
-.portfolio-title {}
-
-.portfolio-filters-list {}
-
-.list {}
-
-.portfolio-filters-item {}
-
-.portfolio-filters-btn {}
-
-.btn {}
-
 .portfolio-list {}
 
-.portfolio-item {}
+.portfolio-item {
+    background-color: var(--backgrond-color-light);
+}
 
-.portfolio-item-link {}
-
-.link {}
-
-.portfolio-item-subtitle {}
-
-.portfolio-item-text {}
-
-.footer {}
-
-.logo-link {}
-
-.logo-web {}
-
-.footer-logo-studio {}
-
-.footer-text {}
+.portfolio-item-link:hover, .portfolio-item-link:focus {}
