@@ -18,6 +18,10 @@ body {
     color: inherit;
 }
 
+.site-title {
+    visibility: hidden
+}
+
 .list {
     list-style: none;
 }
@@ -100,7 +104,6 @@ body {
 .features {}
 
 .features-title {
-    visibility: hidden;
 }
 
 .features-list {}
@@ -196,3 +199,43 @@ body {
     line-height: 1.5;   
     letter-spacing: 0.02em;
 }
+
+/**----portfolio----**/
+
+.main-portfolio {}
+
+.section-portfolio {}
+
+.portfolio-title {}
+
+.portfolio-filters-list {}
+
+.list {}
+
+.portfolio-filters-item {}
+
+.portfolio-filters-btn {}
+
+.btn {}
+
+.portfolio-list {}
+
+.portfolio-item {}
+
+.portfolio-item-link {}
+
+.link {}
+
+.portfolio-item-subtitle {}
+
+.portfolio-item-text {}
+
+.footer {}
+
+.logo-link {}
+
+.logo-web {}
+
+.footer-logo-studio {}
+
+.footer-text {}
